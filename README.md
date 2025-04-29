@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💰 Personal Finance Visualizer
 
-## Getting Started
+A simple and responsive web application to help users track their personal finances, visualize expenses, and manage budgets effectively.
 
-First, run the development server:
+## 📌 Features
+
+### ✅ Stage 1: Basic Transaction Tracking
+- Add, edit, and delete transactions (amount, date, description)
+- View all transactions in a clean list format
+- Monthly expenses displayed using a bar chart
+- Basic form validation for reliable input
+
+### 📊 Stage 2: Categories
+- All Stage 1 features included
+- Assign predefined categories to each transaction
+- Pie chart for category-wise breakdown of expenses
+- Dashboard summary with:
+  - Total expenses
+  - Category-wise breakdown
+  - Most recent transactions
+
+### 💡 Stage 3: Budgeting
+- All Stage 2 features included
+- Set monthly budgets for each category
+- Budget vs actual comparison chart
+- Simple spending insights and visual feedback
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: [Next.js](https://nextjs.org/)
+- **UI Components**: [shadcn/ui](https://ui.shadcn.com/)
+- **Charts**: [Recharts](https://recharts.org/)
+- **Backend**: Node.js (Next.js API routes)
+- **Database**: [MongoDB](https://www.mongodb.com/)
+- **Styling**: Tailwind CSS
+- **Auth (optional)**: NextAuth.js or Clerk (if user login is needed)
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/personal-finance-visualizer.git
+cd personal-finance-visualizer
+```
+### 2. Install Dependencies
+
+```bash
+npm install
+# or
+yarn install
+```
+### 3. Set Up Environment Variables
+
+Create a .env.local file:
+
+```bash
+MONGODB_URI=your_mongodb_connection_string
+```
+### 4. Run the Development Server
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+👉 Link to demo video or live site [Live Demo](https://tangerine-unicorn-f562bf.netlify.app/)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📈 Screenshots
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To be added once UI is built
+<img width="1439" alt="Screenshot 2025-04-30 at 2 28 07 AM" src="https://github.com/user-attachments/assets/2285976b-85f9-4390-9644-3f2ecb7753c2" />
+<img width="1439" alt="Screenshot 2025-04-30 at 2 28 15 AM" src="https://github.com/user-attachments/assets/78ae7784-92db-4c71-aef9-1bf722b30e2f" />
+<img width="1439" alt="Screenshot 2025-04-30 at 2 32 20 AM" src="https://github.com/user-attachments/assets/44a275f7-21f8-4841-bfa1-36a4ec8b5647" />
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
